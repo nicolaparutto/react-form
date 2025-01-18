@@ -16,7 +16,7 @@ const articles = [
 function Form() {
    const [articlesList, setArticlesList] = useState(articles);
    const [newArticle, setNewArticle] = useState({text: ''})
-   const nextId = 3;
+
    const handlerSubmit = (e) => {
       e.preventDefault();
       const newArticlesList = [newArticle, ...articlesList]
@@ -63,6 +63,6 @@ function Form() {
       </div>
      </div>
    )
- }
+}
  
- export default Form
+export default Form
