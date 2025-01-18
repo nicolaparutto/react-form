@@ -19,7 +19,7 @@ body{
   border: none;
   border-radius: 8px;
   background-color: green;
-  padding: 12px 15px;
+  padding: 23px 25px;
   color: #fff;
   cursor: pointer;
 
@@ -34,7 +34,9 @@ body{
 }
 
 form input{
-  padding: 10px;
+  width: 500px;
+  padding: 20px;
+  font-size: 1rem;
   border-radius: 8px;
   margin-right: 5px;
 }
@@ -45,8 +47,30 @@ form input{
 }
 
 .article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #000;
   border-radius: 8px;
   margin-bottom: 20px;
-  padding: 10px;
+
+}
+
+.article-text{
+  padding-left: 15px;
+  width: 95%;
+}
+
+.article-trash{
+  text-align: center;
+  border-radius: 0px 8px 8px 0px;
+  width: 5%;
+  padding: 20px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgb(187, 0, 0);
+  }
 }
